@@ -14,6 +14,7 @@ func headerContains(header http.Header, name string, value string) bool {
 		for _, s := range strings.Split(v, ",") {
 			if strings.EqualFold(value, strings.TrimSpace(s)) {
 				return true
+				
 			}
 		}
 	}
